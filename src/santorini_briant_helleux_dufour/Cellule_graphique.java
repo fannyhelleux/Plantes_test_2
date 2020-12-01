@@ -45,6 +45,6 @@ public class Cellule_graphique extends JButton {
     @Override
     public void paintComponent(Graphics G) {
         super.paintComponent(G);
-        
+        if (celluleAssociee.nb_etages)
     }
 }
