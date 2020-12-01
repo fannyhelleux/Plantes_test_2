@@ -24,7 +24,7 @@ public class Santorini_interface_graphique extends javax.swing.JFrame {
         for (int i = 4; i >= 0; i--) {
             for (int j = 0; j < 5; j++) {
                 Cellule_graphique cellGraph;
-                cellGraph = new Cellule_graphique( plateau[i][j] );
+                cellGraph = new Cellule_graphique(plateau[i][j]);
             }
         }
     }

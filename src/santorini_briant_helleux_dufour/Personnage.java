@@ -11,4 +11,6 @@ package santorini_briant_helleux_dufour;
 public class Personnage {
     Joueur joueur;
     Cellules cellule_actuelle;
+    String teinte;
 }
+    
