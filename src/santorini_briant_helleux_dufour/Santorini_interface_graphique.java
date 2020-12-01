@@ -48,6 +48,7 @@ public class Santorini_interface_graphique extends javax.swing.JFrame {
         btn_depl_bg = new javax.swing.JButton();
         btn_depl_gauche = new javax.swing.JButton();
         btn_depl_hg = new javax.swing.JButton();
+        jTextField3 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -86,36 +87,44 @@ public class Santorini_interface_graphique extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbl_joueurcourant.setText("Joueur Courant :");
-        jPanel2.add(lbl_joueurcourant, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 90, 20));
+        jPanel2.add(lbl_joueurcourant, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 90, 20));
 
         btn_depl_hd.setText("jButton1");
-        jPanel2.add(btn_depl_hd, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 50, -1, -1));
+        btn_depl_hd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_depl_hdActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btn_depl_hd, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 50, 80, 60));
 
         btn_depl_haut.setText("jButton1");
-        jPanel2.add(btn_depl_haut, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, -1, -1));
+        jPanel2.add(btn_depl_haut, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 50, 30, 60));
 
         btn_depl_droite.setText("jButton1");
-        jPanel2.add(btn_depl_droite, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, -1, -1));
+        jPanel2.add(btn_depl_droite, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, 80, 30));
 
         btn_depl_bd.setText("jButton1");
-        jPanel2.add(btn_depl_bd, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 130, -1, -1));
+        jPanel2.add(btn_depl_bd, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, 80, 60));
 
         btn_depl_bas.setText("jButton1");
-        jPanel2.add(btn_depl_bas, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, -1, -1));
+        jPanel2.add(btn_depl_bas, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 30, 60));
 
         btn_depl_bg.setText("jButton1");
-        jPanel2.add(btn_depl_bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
+        jPanel2.add(btn_depl_bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 80, 60));
 
         btn_depl_gauche.setText("jButton1");
-        jPanel2.add(btn_depl_gauche, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 80, 50));
+        jPanel2.add(btn_depl_gauche, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 80, 30));
 
         btn_depl_hg.setText("jButton1");
-        jPanel2.add(btn_depl_hg, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 80, 40));
+        jPanel2.add(btn_depl_hg, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 80, 60));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 190, 350, 190));
+        jTextField3.setText("jTextField1");
+        jPanel2.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 110, -1));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 170, 350, 240));
 
         jPanel3.setBackground(new java.awt.Color(0, 204, 204));
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 420, 350, 100));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 430, 350, 100));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -123,6 +132,10 @@ public class Santorini_interface_graphique extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void btn_depl_hdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_depl_hdActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_depl_hdActionPerformed
 
     /**
      * @param args the command line arguments
@@ -174,6 +187,7 @@ public class Santorini_interface_graphique extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     private javax.swing.JLabel lbl_joueur1;
     private javax.swing.JLabel lbl_joueur2;
     private javax.swing.JLabel lbl_joueurcourant;
