@@ -11,15 +11,22 @@ package santorini_briant_helleux_dufour;
  */
 public class Santorini_interface_graphique extends javax.swing.JFrame {
 
+    Joueur[] listeJoueurs = new Joueur[2];
+    Joueur joueurCourant;
+    Plateau plateau = new Plateau();
+
     /**
      * Creates new form Santorini_interface_graphique
      */
     public Santorini_interface_graphique() {
         initComponents();
-        
+
         for (int i = 4; i >= 0; i--) {
             for (int j = 0; j < 5; j++) {
-                CelluleGraphique cellGraph = new CelluleGraphique(GrilleDeJeu.Cellules[i][j]);
+                Cellule_graphique cellGraph;
+                cellGraph = new Cellule_graphique( plateau[i][j] );
+            }
+        }
     }
 
     /**

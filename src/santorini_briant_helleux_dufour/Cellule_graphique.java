@@ -45,6 +45,10 @@ public class Cellule_graphique extends JButton {
     @Override
     public void paintComponent(Graphics G) {
         super.paintComponent(G);
-        if (celluleAssociee.nb_etages)
+        switch(celluleAssociee.nb_etages){
+            case 1: if (celluleAssociee.presence_personnage()){
+                
+            }
+        }
     }
 }
